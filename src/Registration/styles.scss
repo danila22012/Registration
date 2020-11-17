@@ -1,0 +1,163 @@
+.Registration-Form{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    background: #F0F0F0;
+    border: 2px solid #000;
+    
+
+    &__Item{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 18px;
+        &--hidden{
+            display: none;
+        }
+    }
+    &__Button{
+        margin-top: 10px;
+        padding: 10px;
+        margin: auto;
+        width: fit-content;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        text-transform: uppercase;
+        background: #fff;
+        outline: none;
+        &:hover{
+            background: #dcdbdb;
+            cursor: pointer;
+        }
+        
+    }
+    &__Input{
+        padding: 5px 10px;
+        border: 2px solid #000;
+
+        max-width: 200px;
+        font-size: 18px;
+        background: #fff;
+        border-radius: 10px;
+        outline: none;
+        
+
+    }
+    
+    
+}
+.Select-form{
+    background: #fff;
+    
+    
+    &__Select{
+
+        background: #fff;
+        &::after{
+            display: none;
+        }
+        &::before{
+            display: none;
+        }
+    }
+}
+.Select-form__Select > div{
+    background: #fff;
+    padding: 6px 24px 7px 5px;
+    border: 2px solid #000 ;
+    border-radius: 10px;
+    outline: none;
+}
+.Select-form__Select > div:focus{
+    background: #fff;
+    outline: none;
+    border: 2px solid #000 ;
+    border-radius: 10px;
+}
+.Select-form__Select > input{
+    outline: none;
+}
+
+
+
+
+///////TRANSITION
+.coupon {
+    position: absolute;
+    
+}
+
+.coupon-enter {
+    transform: scale(0.9);
+}
+  
+.coupon-enter-active {
+    
+transform: scale(1);
+transition: transform 300ms;
+  }
+
+.coupon-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+  
+.coupon-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+  
+.form-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+  
+.form-exit-active {
+    opacity: 0;
+    
+    
+    
+    transform: scale(0.5) translate(0px, -200px);
+    transition: opacity 300ms, transform 300ms;
+}
+  
+@media screen and(max-width:450px){
+    .Registration-Form{
+       &__Item{
+           font-size: 16px;
+       }
+       &__Input{
+        font-size: 16px;
+       }
+    }
+}
+@media screen and(max-width:400px){
+    .Registration-Form{
+        &__Item{
+              flex-direction: column;
+              padding: 10px 20px;
+        }
+        &__Input{
+            margin-top: 10px;
+        }
+        .Select-form{
+            margin-top: 10px;
+        }
+        
+    }
+    .Logo{
+        display: none;
+    }
+    .Nav-List{
+        width: 100%;
+        justify-content: center;
+    }
+}

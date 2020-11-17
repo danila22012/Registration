@@ -1,0 +1,21 @@
+.page {
+    position: absolute;
+    
+  }
+  
+  .page-enter {
+    transform: scale(0.9);
+  }
+  
+  .page-enter-active {
+    
+    transform: scale(1);
+    transition: transform 300ms;
+  }
+  
+  .page-exit {
+    opacity: 0;
+    
+  }
+  
+  

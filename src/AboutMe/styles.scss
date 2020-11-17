@@ -1,0 +1,24 @@
+.About-me{
+    max-width: 600px;
+    padding: 15px;
+    background: #F0F0F0;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #000;
+   
+    &__Contacts{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    &__Link{
+        text-decoration: none;
+        color: black;
+    }
+    &__Skills-list{
+        margin-left: 25px;
+    }
+}
+.Paragraph{
+    padding: 10px 0;
+}
