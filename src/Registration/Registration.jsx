@@ -86,7 +86,7 @@ class Registration extends Component {
         let name = target.name
         const nameRegExp = /^[a-zA-Z\-]+$/;
 
-        let state;
+        
         console.log(name);
         
        if(name === 'userName'){
@@ -184,7 +184,7 @@ class Registration extends Component {
                             label="Loyalty program"
                             control={<Switch
                                 color="secondary"
-                                labelPlacement="start"
+                                labelplacement="start"
                                 onChange={this.changeSwitch}
                                 value={this.state.userCoupon} 
                                 />}
